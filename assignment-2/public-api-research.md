@@ -71,3 +71,22 @@ Stripe - /v1/customers/search
 Twilio - /v2/Services/VAXXXX/VerificationCheck
 ```
 
+# To Do
+
+## HTTP methods usage
+
+## Proper HTTP status code usage
+
+## Resource Relationships Provision
+
+## Pagination implementation
+
+## Support for filtering sorting and searching
+
+## Caching implementation
+
+## Error Handling
+
+## API versioning and deprecation
+
+## Documentation and example
