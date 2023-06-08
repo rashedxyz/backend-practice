@@ -71,9 +71,58 @@ Stripe - /v1/customers/search
 Twilio - /v2/Services/VAXXXX/VerificationCheck
 ```
 
-# To Do
+## Authentication mechanisms
+
+**GitHub**
+
+GitHub requires Bearer token to authorize public app requests to access it’s resources. For personal use it provides a personal access token mechanism.
+
+```jsx
+curl --request GET \
+--url "https://api.github.com/octocat" \
+--header "Authorization: Bearer YOUR-TOKEN" \
+--header "X-GitHub-Api-Version: 2022-11-28"
+```
+
+**Stripe**
+
+Stripe uses API key to authenticate it’s requests.
+
+```jsx
+const Stripe = require('stripe');
+const stripe = Stripe('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+```
+
+```jsx
+var customer = await stripe.customers.retrieve(
+  'cu_19YMK02eZvKYlo2Cvcb2J41W',
+  {
+    apiKey: 'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
+  }
+);
+```
+
+**Twilio**
+
+Twilio uses HTTP basic authentication to secure it’s REST API.
+
+```jsx
+https://username:password@www.myserver.com/my_secure_document
+```
 
 ## HTTP methods usage
+
+All public API of my list uses HTTP methods appropriately. They all use HTTP verb
+
+GET for retrieving resources.
+
+POST for creating new resources.
+
+PUT or PATCH for updating resources.
+
+DELETE for deleting resources.
+
+# To Do
 
 ## Proper HTTP status code usage
 
