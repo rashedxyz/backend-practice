@@ -169,13 +169,3 @@ Twilio also manage their API version using API endpoints.
 ```jsx
 https://api.twilio.com/2010-04-01/Accounts.json
 ```
-
-
-# To Do
-
-
-## Resource Relationships Provision
-
-## Pagination implementation
-
-## Support for filtering sorting and searching
