@@ -144,6 +144,33 @@ All of them also uses appropriate HTTP status codes to indicate the outcome of A
 
 **500, 502, 503, 504 - Server Errors**
 
+## Error Handling
+
+According to their documentation, all of them return error responses when errors occur. They include error codes, error messages, and additional details to assist clients in troubleshooting and use appropriate HTTP status codes for different types of errors.
+
+## API versioning
+
+**GitHub**
+
+GitHub provides **X-GitHub-Api-Version** request header to specify an API version.
+
+**Stripe**
+
+Stripe manage their version of API using API endpoints.
+
+```jsx
+/v1/customers
+```
+
+**Twilio**
+
+Twilio also manage their API version using API endpoints.
+
+```jsx
+https://api.twilio.com/2010-04-01/Accounts.json
+```
+
+
 # To Do
 
 
@@ -152,11 +179,3 @@ All of them also uses appropriate HTTP status codes to indicate the outcome of A
 ## Pagination implementation
 
 ## Support for filtering sorting and searching
-
-## Caching implementation
-
-## Error Handling
-
-## API versioning and deprecation
-
-## Documentation and example
