@@ -122,9 +122,30 @@ PUT or PATCH for updating resources.
 
 DELETE for deleting resources.
 
+### Proper HTTP status code usage
+
+All of them also uses appropriate HTTP status codes to indicate the outcome of API requests.
+
+**200 - OK**
+
+**400 - Bad Request**
+
+**401 - Unauthorized**
+
+**402 - Request Failed**
+
+**403 - Forbidden**
+
+**404 - Not Found**
+
+**409 - Conflict**
+
+**429 - Too Many Requests**
+
+**500, 502, 503, 504 - Server Errors**
+
 # To Do
 
-## Proper HTTP status code usage
 
 ## Resource Relationships Provision
 
